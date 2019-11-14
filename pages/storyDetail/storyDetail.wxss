@@ -1,0 +1,69 @@
+/* pages/landing/landing.wxss */
+/* pages/stories/stories.wxss */
+page {
+  background-color: white;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+.head {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+.content{
+  font-size: 14px;
+  margin:10px;
+  display: flex;
+}
+.CCC{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.comment{
+  padding:10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.comments{
+  font-size: 12px;
+  padding:10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+.Cmt-area{
+  font-size: 12px;
+ 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+.btn-area{
+  margin-top: 20px;
+}
+.section{
+  padding-left: 10px;
+  padding-top: 20px;
+}
+/* 
+.card-product .p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+} */

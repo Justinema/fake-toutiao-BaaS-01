@@ -1,0 +1,33 @@
+<!--pages/stories/stories.wxml-->
+<!-- <view class="banner" style="padding:20px 0px; height: 140px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
+    <view class="h1" bindtap="changeTitle">{{title}}</view>
+    <view class="p">All stories</view>
+    <view class="btn btn-flat" bindtap="goToPost">Write a post</view>
+</view> -->
+
+<view class="head">
+  <view class="name">{{stories.name}}</view>
+  <view class="content">{{stories.content}}</view>
+</view>
+
+<view class="comments">
+  <view class="CCC">Comments</view>
+  <view class="comment" wx:for="{{comments}}" wx:for-item="item">
+   <view>{{item.name}}</view>
+   <view>{{item.content}}</view>
+   <view data-id="{{item.id}}" data-votes="{{item.votes}}" bindtap="voteComment" > votes: {{item.votes}} </view>
+   <view data-id="{{item.id}}" data-votes="{{item.votes}}" bindtap="devoteComment" > devote</view>
+   <view data-id="{{item.id}}" bindtap="deleteComment" > x </view>
+  </view>
+</view>
+
+<form bindsubmit="cmtSubmit" bindreset="formReset" class="Cmt-area">
+  <view class="section">
+    <input name="name" placeholder="your name"/>
+    <input name="content" placeholder="your comment"/>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+  </view>
+</form>
+  

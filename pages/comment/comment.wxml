@@ -1,0 +1,4 @@
+<!--pages/comment/comment.wxml-->
+
+<view class="comment" wx:for="{{comments}}" wx:for-itme="item">{{item.name}}</view>
+<view class="comment" wx:for="{{comments}}" wx:for-itme="item">{{item.content}}</view>
